@@ -1,7 +1,7 @@
 <?php
 
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once('D:\coding\Repositories\system-design\config\config.php');
+$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 // 檢查連接是否成功
 if ($conn->connect_error) {

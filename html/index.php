@@ -1,3 +1,7 @@
+<?php
+    include('..\php\get_invoices.php');
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +19,6 @@
 <section class="user-info">
     <h2>User Information</h2>
     <div>
-
         <p>Supplier Name: XYZ Company</p>
         <p>Contact Information: contact@example.com</p>
         <!-- Add more user-related information here -->
@@ -24,7 +27,6 @@
 <section class="invoice-summary">
     <h2>Invoice Summary</h2>
     <div>
-        <?php echo '3'; ?>
         <p>Pending Invoices: 5</p>
         <p>Paid Invoices: 10</p>
         <p>Total Invoices: 0<?php echo $totalInvoices; ?></p>

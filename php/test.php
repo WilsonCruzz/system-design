@@ -1,9 +1,9 @@
-<?php
-$mysqli = new mysqli('localhost', 'phpmyadmin_user', 'phpadmin', 'mysql');
-
-if ($mysqli->connect_error) {
-    die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
-} else {
-    echo 'Connected successfully';
-}
-?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Test</title>
+</head>
+<body>
+<?php echo '<p>Hello World</p>'; ?>
+</body>
+</html>

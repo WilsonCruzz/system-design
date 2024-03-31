@@ -1,0 +1,122 @@
+logical flow
+
+User Registration/Login:
+
+Users can register for an account or login with existing credentials.
+You can use PHP and MySQL to handle user registration and login functionalities.
+Homepage:
+
+After logging in, the homepage displays basic information about the supplier and summary information about invoices.
+On the homepage, users can see summary information about pending and paid invoices.
+View All Invoices:
+
+Users can click on the "View All Invoices" link to see a list of all invoices related to the supplier.
+The invoices page should include detailed information about the invoices, such as invoice number, date, amount, payment status, etc.
+View Details of a Single Invoice:
+
+Users can click on an invoice from the list to view detailed information about that specific invoice.
+The details page should include information about the invoice content, payment status, and related customer information.
+Add New Invoice:
+
+Users can add new invoice information.
+You can provide a form where users can enter relevant information about the invoice and submit it for processing on the backend.
+Edit/Delete Invoice:
+
+Users can edit or delete existing invoices.
+You can provide interfaces and functionalities that allow users to easily perform these actions.
+Logout:
+
+Users can log out of the system when needed.
+
+1.用戶註冊/登錄：
+
+用戶可以註冊一個帳戶，或者使用現有的帳戶登錄。
+您可以使用 PHP 和 MySQL 來處理用戶的註冊和登錄功能。
+2.首頁：
+
+用戶登錄後，首頁會顯示供應商的基本信息以及發票概要信息。
+在首頁上，用戶可以看到有關待支付和已支付發票的摘要信息。
+3.查看所有發票：
+
+用戶可以通過點擊“查看所有發票”連結，查看所有與供應商相關的發票列表。
+發票列表頁面應該包含發票的詳細信息，例如發票編號、日期、金額、支付狀態等。
+4.查看單個發票的詳細信息：
+
+用戶可以點擊發票列表中的發票，以查看單個發票的詳細信息。
+詳細信息頁面應該包含有關發票內容、支付狀態以及相關的客戶信息等的詳細信息
+。
+5.添加新發票：
+
+用戶可以添加新的發票信息。
+您可以提供一個表單，用戶可以填寫發票的相關信息，並將其提交到後端進行處理。
+
+6.編輯/刪除發票：
+
+用戶可以編輯或刪除已有的發票。
+您可以提供相應的界面和功能，讓用戶能夠輕鬆地進行這些操作。
+7.登出：
+
+用戶可以在需要時登出系統。
+
+index.html
+
+Main Purpose: The homepage of the Invoice Management System.
+Content Blocks:
+Header: Displays the title of the system.
+User Information Section: Displays information about the user (in this case, the supplier).
+Invoice Summary Section: Provides a summary of invoice-related information such as the number of pending invoices, paid invoices, etc.
+Navigation Links: Allows the user to navigate to different sections of the system, such as viewing all invoices or adding new invoices.
+Footer: Contains footer content, such as copyright information.
+invoices.html
+
+Main Purpose: Lists all invoices related to the supplier.
+Content Blocks:
+Header: Displays the title of the page.
+Invoice List Section: Displays a list of all invoices, each with details like invoice number, date, amount, and payment status.
+Navigation Links: Allows the user to navigate back to the homepage or view details of a specific invoice.
+Footer: Contains footer content.
+invoice_details.html
+
+Main Purpose: Displays detailed information about a specific invoice.
+Content Blocks:
+Header: Displays the title of the page.
+Invoice Details Section: Provides detailed information about the selected invoice, including its content, payment status, and related customer information.
+Navigation Links: Allows the user to navigate back to the invoice list or the homepage.
+Footer: Contains footer content.
+
+用戶管理功能：
+
+注冊新用戶
+登錄和登出
+
+
+供應商管理功能：
+
+添加新供應商
+編輯現有供應商信息
+刪除供應商
+查看所有供應商列表
+
+
+發票管理功能：
+
+創建新發票
+編輯現有發票信息
+刪除發票
+查看所有發票列表
+查看單個發票的詳細信息
+
+
+用戶界面功能：
+
+首頁：顯示發票管理系統的總覽，包括用戶信息和最近的發票概要信息
+發票列表頁面：顯示所有發票的簡要信息列表，用戶可以通過該頁面查看所有發票
+單個發票詳細信息頁面：顯示單個發票的詳細信息，包括發票內容、支付狀態等
+
+
+後端功能：
+
+處理用戶的登錄、注冊和登出請求
+處理供應商信息的添加、編輯、刪除和查詢請求
+處理發票信息的添加、編輯、刪除和查詢請求
+與前端界面進行數據交互，向用戶提供所需的數據

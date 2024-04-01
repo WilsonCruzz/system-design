@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-01T19:14:22.233Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="02IgQENsisoTteFiCUbs" version="24.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-01T20:21:05.825Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="uv8jFzkOJ69yrqXGSShb" version="24.2.1" type="github">
   <diagram name="Page-1" id="b520641d-4fe3-3701-9064-5fc419738815">
     <mxGraphModel dx="1461" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -30,7 +30,7 @@
         <mxCell id="21ea969265ad0168-11" value="invoice_id&lt;div&gt;invoice_number&lt;/div&gt;&lt;div&gt;invoice_date&lt;br&gt;invoice_total&lt;br&gt;payment_total&lt;/div&gt;&lt;div&gt;&lt;div&gt;credit_total&lt;/div&gt;&lt;div&gt;terms_id&lt;/div&gt;&lt;div&gt;invoice_due_date&lt;/div&gt;&lt;div&gt;payment_date&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="21ea969265ad0168-10" vertex="1">
           <mxGeometry y="26" width="160" height="164" as="geometry" />
         </mxCell>
-        <mxCell id="21ea969265ad0168-14" value="Function" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+        <mxCell id="21ea969265ad0168-14" value="Delete invoice" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="147.5" y="266" width="160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="21ea969265ad0168-15" value="Row 1" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="21ea969265ad0168-14" vertex="1">
@@ -73,6 +73,18 @@
         </mxCell>
         <mxCell id="_AwHutVJ16rK8L6297I9-4" value="invoice_id&lt;div&gt;vendor_id&lt;br&gt;&lt;div&gt;invoice_number&lt;/div&gt;&lt;div&gt;invoice_date&lt;br&gt;invoice_total&lt;br&gt;payment_total&lt;/div&gt;&lt;div&gt;credit_total&lt;/div&gt;&lt;div&gt;terms_id&lt;/div&gt;&lt;div&gt;invoice_due_date&lt;/div&gt;&lt;div&gt;payment_date&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_AwHutVJ16rK8L6297I9-3">
           <mxGeometry y="26" width="160" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="_AwHutVJ16rK8L6297I9-9" value="Create invoice" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="360" y="266" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_AwHutVJ16rK8L6297I9-10" value="Row 1" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_AwHutVJ16rK8L6297I9-9">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_AwHutVJ16rK8L6297I9-11" value="Row 2" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_AwHutVJ16rK8L6297I9-9">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_AwHutVJ16rK8L6297I9-12" value="Row 3" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_AwHutVJ16rK8L6297I9-9">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

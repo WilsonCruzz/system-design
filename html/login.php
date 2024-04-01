@@ -61,8 +61,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "Login Successful";
                 // 在這裡處理登錄成功的操作，例如將用戶重定向到其個人資料頁面
                 // 導向至 index.php 頁面
-                $_SESSION['name'] = $user['name']; // 將 $user['supplier_name'] 替換為實際的供應商名稱字段
-                $_SESSION['email'] = $user['email']; // 將 $user['contact_info'] 替換為實際的聯絡資訊字段
+                $_SESSION['name'] = $user['name'];
+                $_SESSION['email'] = $user['email'];
                 header("Location: index.php");
                 exit; // 確保腳本終止以防止後續代碼執行
             } else {

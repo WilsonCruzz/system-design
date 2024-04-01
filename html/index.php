@@ -44,7 +44,18 @@
     </ul>
 </nav>
 <footer>
-    <!-- Footer content -->
+    <?php
+    // 如果用戶已經登入，顯示登入的用戶名稱和其他信息
+    if(isset($_SESSION['name'])) {
+        // 顯示登出按鈕或連結
+        echo "<a href='../php/logout.php'>Log Out</a>";
+    } else {
+        // 如果用戶未登入，顯示登入表單或其他登入介面
+        echo "<p>Please log in to access this page.</p>";
+        // 顯示登入連結
+        echo "<a href='login.php'>Log In</a>";
+    }
+    ?>
 </footer>
 </body>
 </html>

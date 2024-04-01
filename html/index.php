@@ -1,5 +1,6 @@
 <?php
-    include('..\php\get_invoices.php');
+    include('../php/invoices.php');
+    include('../php/paid_invoices.php');
     ?>
 
 <!DOCTYPE html>
@@ -27,15 +28,15 @@
 <section class="invoice-summary">
     <h2>Invoice Summary</h2>
     <div>
-        <p>Pending Invoices: 5</p>
-        <p>Paid Invoices: 10</p>
-        <p>Total Invoices: 0<?php echo $totalInvoices; ?></p>
+        <p>Total Invoices: <?= $totalInvoices ?></p>
+        <p>Pending Invoices: <?= $totalInvoices-$totalPaidInvoices ?></p>
+        <p>Paid Invoices: <?= $totalPaidInvoices ?></p>
         <!-- Add more summary information about invoices here -->
     </div>
 </section>
 <nav>
     <ul>
-        <li><a href="invoices.html">View All Invoices</a></li>
+        <li><a href="invoices.php">View All Invoices</a></li>
         <!-- Add more navigation links here -->
     </ul>
 </nav>

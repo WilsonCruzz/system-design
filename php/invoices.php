@@ -12,15 +12,25 @@ if ($conn->connect_error) {
 $sql = "SELECT COUNT(*) AS totalInvoices FROM invoices";
 $result = $conn->query($sql);
 
-$totalInvoices = 100;
+$a = $conn->query("SELECT * From invoices")->fetch_all();
+// 假設這裡是您從資料庫中檢索資料的程式碼
+$invoices = array(
+    array("id" => 12345, "date" => "January 31, 2024", "amount" => "$500.00", "status" => "Paid"),
+    // 添加更多資料項目
+);
+
+// 將結果轉換為 JSON 格式
+//echo json_encode($invoices);
+//echo var_dump($a);
 
 // 檢查查詢是否成功
 if ($result && $result->num_rows > 0) {
     // 獲取查詢結果
     $row = $result->fetch_assoc();
     $totalInvoices = $row['totalInvoices'];
-    echo $totalInvoices;
+   // echo $totalInvoices;
 }
+
 
 // 關閉資料庫連接
 $conn->close();

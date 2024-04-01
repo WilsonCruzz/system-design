@@ -1,6 +1,9 @@
 <?php
     include('../php/invoices.php');
     include('../php/paid_invoices.php');
+    session_start();
+    $supplier_name = $_SESSION['name'];
+    $contact_info = $_SESSION['email'];
     ?>
 
 <!DOCTYPE html>
@@ -20,8 +23,8 @@
 <section class="user-info">
     <h2>User Information</h2>
     <div>
-        <p>Supplier Name: XYZ Company</p>
-        <p>Contact Information: contact@example.com</p>
+        <p>Supplier Name: <?= $supplier_name ?></p>
+        <p>Contact Information: <?= $contact_info ?></p>
         <!-- Add more user-related information here -->
     </div>
 </section>

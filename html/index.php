@@ -30,7 +30,6 @@ $contact_info = $_SESSION['email'];
     <div>
         <p>Supplier Name: <?= $supplier_name ?></p>
         <p>Contact Information: <?= $contact_info ?></p>
-        <!-- Add more user-related information here -->
     </div>
 </section>
 <section class="invoice-summary">
@@ -39,13 +38,11 @@ $contact_info = $_SESSION['email'];
         <p>Total Invoices: <?= $totalInvoices ?></p>
         <p>Pending Invoices: <?= $totalInvoices-$totalPaidInvoices ?></p>
         <p>Paid Invoices: <?= $totalPaidInvoices ?></p>
-        <!-- Add more summary information about invoices here -->
     </div>
 </section>
 <nav>
     <ul>
         <li><a href="invoices.php">View All Invoices</a></li>
-        <!-- Add more navigation links here -->
     </ul>
 </nav>
 <footer>

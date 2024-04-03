@@ -1,7 +1,7 @@
 <?php
 // Include necessary PHP files
 require '../php/invoices.php';
-require '../php/function.php';
+require '../php/delete.php';
 ?>
 
 <!DOCTYPE html>
@@ -40,14 +40,14 @@ require '../php/function.php';
             <td><?= $value[8] ?></td>
             <td><?= $value[9] ?></td>
             <td>
-                <a type="button" href="../php/function.php?delete_id=<?= $value[0]?>">Delete</a>
+                <a type="button" href="../php/delete.php?delete_id=<?= $value[0]?>">Delete</a>
             </td>
         </tr>
         <?php endforeach; ?>
     </table>
 </section>
 <section class="actions">
-    <button>Add New Invoice</button>
+    <a type="button" href="../php/create_invoice.php">Add New Invoice</a>
     <a href="index.php">Back to Home</a>
 </section>
 <footer>

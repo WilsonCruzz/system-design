@@ -12,8 +12,6 @@ This is a simple Invoice Management System designed to help users manage their i
 
 ## Technologies Used
 
-## Technologies Used
-
 - **PHP**: Used for server-side scripting and backend logic.
 - **MySQL**: Used as the database management system for storing invoice data.
 - **HTML**: Utilized for structuring the web pages and defining content.

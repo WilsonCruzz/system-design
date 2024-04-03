@@ -42,6 +42,3 @@ This is a simple Invoice Management System designed to help users manage their i
 2. Open `index.php` in your web browser to access the application.
 3. Use the navigation links to view all invoices, add new invoices, and view invoice summary.
 
-## Contributing
-
-Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.

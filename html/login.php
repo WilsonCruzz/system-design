@@ -35,49 +35,58 @@
 
 </html>
 <?php
+// Start the session
 session_start();
+// Include the configuration file
 require_once('..\config\config.php');
+// Establish a connection to the database
 $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+// Check if the connection was successful
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
+// Check if the request method is POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get the username and password from the POST request
     $username = $_POST["username"];
     $password = $_POST["password"];
 
     try {
-        // 準備 SQL 語句並執行
+        // Prepare and execute the SQL statement to fetch user data by username
         $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $result = $stmt->get_result();
-
+        // Check if a user with the provided username exists
         if ($result->num_rows > 0) {
+            // Fetch the user data
             $user = $result->fetch_assoc();
-            // 驗證密碼
+            // Verify the password
             if (password_verify($password, $user['password'])) {
-                // 密碼驗證成功，可以進行登錄操作
+                // Password verification successful, perform login operation
                 echo "Login Successful";
-                // 在這裡處理登錄成功的操作，例如將用戶重定向到其個人資料頁面
-                // 導向至 index.php 頁面
+                // Set session variables
                 $_SESSION['name'] = $user['name'];
                 $_SESSION['email'] = $user['email'];
+                // Redirect to the index.php page after successful login
                 header("Location: index.php");
-                exit; // 確保腳本終止以防止後續代碼執行
+                // Ensure script termination to prevent further code execution
+                exit;
             } else {
-                // 密碼驗證失敗
+                // Password verification failed
                 echo "<h2>Login Failed</h2>";
                 echo "Invalid username or password.";
             }
         } else {
+            // User not found
             echo "<h2>Login Failed</h2>";
             echo "User not found.";
         }
     } catch (mysqli_sql_exception $e) {
+        // Handle database connection errors
         echo "Connection failed: " . $e->getMessage();
     } finally {
-        // 關閉 MySQLi 連接
+        // Close the MySQLi connection
         $conn->close();
     }
 }

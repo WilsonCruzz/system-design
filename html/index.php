@@ -1,10 +1,15 @@
 <?php
-    include('../php/invoices.php');
-    include('../php/paid_invoices.php');
-    session_start();
-    $supplier_name = $_SESSION['name'];
-    $contact_info = $_SESSION['email'];
-    ?>
+// Include necessary PHP files
+include('../php/invoices.php');
+include('../php/paid_invoices.php');
+
+// Start session
+session_start();
+
+// Get user information from session
+$supplier_name = $_SESSION['name'];
+$contact_info = $_SESSION['email'];
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,14 +50,14 @@
 </nav>
 <footer>
     <?php
-    // 如果用戶已經登入，顯示登入的用戶名稱和其他信息
+    // If the user is logged in, display their name and other information
     if(isset($_SESSION['name'])) {
-        // 顯示登出按鈕或連結
+        // Display logout button or link
         echo "<a href='../php/logout.php'>Log Out</a>";
     } else {
-        // 如果用戶未登入，顯示登入表單或其他登入介面
+        // If the user is not logged in, display login form or other login interface
         echo "<p>Please log in to access this page.</p>";
-        // 顯示登入連結
+        // Display login link
         echo "<a href='login.php'>Log In</a>";
     }
     ?>

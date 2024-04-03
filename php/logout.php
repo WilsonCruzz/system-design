@@ -1,13 +1,15 @@
 <?php
-session_start(); // 開始 session
+// Start the session
+session_start();
 
-// 刪除所有的 session 變數
+// Unset all session variables
 session_unset();
 
-// 銷毀 session
+// Destroy the session
 session_destroy();
 
-// 重定向到登出後的頁面或重新登入頁面
+// Redirect to the login page after logout
 header("Location: ../html/login.php");
+// Ensure script termination to prevent further code execution
 exit;
 ?>

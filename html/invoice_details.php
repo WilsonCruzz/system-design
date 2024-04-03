@@ -14,12 +14,10 @@
 <section class="invoice-details">
     <h2>Invoice Information</h2>
     <div>
-        <!-- Display detailed information about the invoice -->
         <p>Invoice Number: #12345</p>
         <p>Date: January 31, 2024</p>
         <p>Amount: $500.00</p>
         <p>Status: Paid</p>
-        <!-- Add more detailed information here -->
     </div>
 </section>
 <section class="actions">
@@ -31,7 +29,6 @@
     <a href="index.html">Back to Home</a>
 </section>
 <footer>
-    <!-- Footer content -->
 </footer>
 </body>
 </html>

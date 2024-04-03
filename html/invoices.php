@@ -1,4 +1,5 @@
 <?php
+// Include necessary PHP files
 require '../php/invoices.php';
 require '../php/function.php';
 ?>
@@ -19,7 +20,6 @@ require '../php/function.php';
 <section class="invoice-list">
     <h2>Invoice List</h2>
     <table>
-        <!-- Display a list of invoices -->
         <tr>
             <th><?= "invoice_id:" ?></th>
             <th><?= "invoice_number:"?></th>
@@ -44,16 +44,13 @@ require '../php/function.php';
             </td>
         </tr>
         <?php endforeach; ?>
-        <!-- Add more invoice items here -->
     </table>
 </section>
 <section class="actions">
-    <!-- Actions for managing invoices -->
     <button>Add New Invoice</button>
     <a href="index.php">Back to Home</a>
 </section>
 <footer>
-    <!-- Footer content -->
 </footer>
 </body>
 </html>

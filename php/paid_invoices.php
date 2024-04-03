@@ -1,26 +1,28 @@
 <?php
-
+// Include the database configuration file
 require_once('..\config\config.php');
+// Connect to the database
 $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-// 檢查連接是否成功
+// Check if the connection was successful
 if ($conn->connect_error) {
-    die("連接失敗：" . $conn->connect_error);
+    // Terminate script execution and display error message
+    die("fail：" . $conn->connect_error);
 }
 
-// 查詢 invoices 表中的發票數量
+// Query to get the total number of paid invoices
 $sql = "SELECT COUNT(*) AS totalPaidInvoices FROM paid_invoices";
+// Execute the query
 $result = $conn->query($sql);
 
 
-// 檢查查詢是否成功
+// Check if the query was successful and if there are rows returned
 if ($result && $result->num_rows > 0) {
-    // 獲取查詢結果
+    // Fetch the result row as an associative array
     $row = $result->fetch_assoc();
+    // Get the total number of paid invoices from the result
     $totalPaidInvoices = $row['totalPaidInvoices'];
 }
-
-
-// 關閉資料庫連接
+// Close the database connection
 $conn->close();
 ?>

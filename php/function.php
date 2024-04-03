@@ -3,7 +3,7 @@
 require_once('..\config\config.php');
 $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if ($conn->connect_error) {
-    die("連接失敗：" . $conn->connect_error);
+    die("fail：" . $conn->connect_error);
 }
 $conn->query("SET FOREIGN_KEY_CHECKS = 0;");
 function delete ($id, $conn=null) {

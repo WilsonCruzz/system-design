@@ -18,7 +18,7 @@ This is a simple Invoice Management System designed to help users manage their i
 - **MySQL**: Used as the database management system for storing invoice data.
 - **HTML**: Utilized for structuring the web pages and defining content.
 - **CSS**: Used for styling the web pages and customizing the appearance.
-  - Modified a website template from [geeksforgeeks]([[https://templatemo.com](https://www.geeksforgeeks.org/build-an-e-commerce-web-application-using-html-css-php-and-hosted-using-xampp/)])https://www.geeksforgeeks.org/build-an-e-commerce-web-application-using-html-css-php-and-hosted-using-xampp/ for the frontend design.
+  - Modified a website template from [geeksforgeeks]([https://www.geeksforgeeks.org/build-an-e-commerce-web-application-using-html-css-php-and-hosted-using-xampp/]) for the frontend design.
 
 
 ## Installation

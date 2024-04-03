@@ -1,16 +1,41 @@
 /* styles.css */
+@charset "UTF-8";
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 30px;
 }
 
 header, nav, main, footer {
     padding: 20px;
 }
 
-h1, h2 {
+
+header h1 {
+    font-size: 32px;
+    color: #333;
+}
+h1 {
     margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.user-info, .invoice-summary {
+    margin-bottom: 30px;
+}
+
+.user-info div, .invoice-summary div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.user-info p, .invoice-summary p {
+    margin: 10px 0;
+    font-size: 16px;
 }
 
 nav ul {
@@ -23,11 +48,53 @@ nav ul li {
     margin-right: 20px;
 }
 
-a {
+nav ul li a {
+    padding: 10px 20px;
     text-decoration: none;
-    color: #333;
+    color: #007bff;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+}
+
+a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: lightblue;
 }
 
 a:hover {
     color: #007bff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }

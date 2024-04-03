@@ -12,14 +12,15 @@ require '../php/delete.php';
     <title>Invoice Management System - All Invoices</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/script.js"></script>
 </head>
 <body>
 <header>
     <h1>All Invoices</h1>
 </header>
-<section class="invoice-list">
+<section >
     <h2>Invoice List</h2>
-    <table>
+    <table id="standing">
         <tr>
             <th><?= "invoice_id:" ?></th>
             <th><?= "invoice_number:"?></th>
@@ -46,6 +47,7 @@ require '../php/delete.php';
         <?php endforeach; ?>
     </table>
 </section>
+<br>
 <section class="actions">
     <a type="button" href="../php/create_invoice.php">Add New Invoice</a>
     <a href="index.php">Back to Home</a>

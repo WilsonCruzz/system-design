@@ -18,7 +18,7 @@ The Invoice Management System is a sophisticated solution meticulously crafted t
 
 3. **HTML & CSS:** HTML is employed for structuring web pages, while CSS is utilized for styling, ensuring a visually appealing and responsive design.
 
-4. **Customized Template:** The frontend design is enhanced using a modified website template sourced from geeksforgeeks, ensuring a polished and professional appearance.
+4. **Customized Template:** The frontend design is enhanced using a modified website template sourced from [geeksforgeeks](https://www.geeksforgeeks.org/build-an-e-commerce-web-application-using-html-css-php-and-hosted-using-xampp/), ensuring a polished and professional appearance.
 
 ## Installation:
 
